@@ -46,6 +46,7 @@ html {
   --biggest-font-size: 8rem;
   --bigger-font-size: 5.6rem;
   --big-font-size: 4rem;
+  --h1-font-size: 3rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.8rem;
   --normal-font-size: 1.5rem;
@@ -261,7 +262,12 @@ h1 a {
 }
 
 .btn-secondary {
+  background-color: #fff !important;
   border: 1px solid #d8dedd;
+  font-family: var(--condensed-font);
+  font-weight: 600;
+  line-height: 2.2rem;
+  font-size: var(--h3-font-size);
 }
 
 .btn {
@@ -346,15 +352,17 @@ a i {
 
 .btn-only-icon {
   width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
   padding-left: 0;
   padding-right: 0.6rem;
+  padding-bottom: 0.4rem;
   text-align: center;
 }
 
 .prediction {
   border-bottom: 1px solid #e6eceb;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .prediction a {
@@ -408,10 +416,10 @@ a i {
 }
 
 .prediction .prediction-details .progress {
-  height: 8px;
+  /* height: 8px;
   background-color: #00bf7c;
   margin: 0.75rem 0;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .prediction .prediction-details .match-time-list {
@@ -432,4 +440,173 @@ a i {
 .prediction-1st-win {
   font-weight: 600;
   color: #00bf7c;
+}
+
+/* Progress Bar */
+
+.bg-gray-100 {
+  background: #00bf7c !important;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 0.6s ease;
+  font-size: 3rem;
+  background-color: #e6eceb;
+}
+
+.progress {
+  height: 6px;
+  margin: 0.8rem 0;
+}
+
+/* Matches page */
+.masthead {
+  background-color: #fbfcfc;
+  padding: 8rem 0;
+  border-bottom: 1px solid #e6eceb;
+  margin-bottom: 8rem;
+}
+
+.masthead .container-ko {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#filter {
+  padding: 1.5rem 3rem;
+  font-family: var(--condensed-font);
+  line-height: 2.2rem;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  color: #001a17;
+  border: 1px solid #d8dedd;
+  border-radius: 2.5rem;
+  font-size: var(--h3-font-size);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.site-footer .container-ko {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+}
+
+.line {
+  height: 1px;
+  background-color: #e6eceb;
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.site-footer__btns {
+  margin-top: 2rem;
+}
+
+.site-footer__btns a {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+  padding-bottom: 3rem;
+  padding-right: 1rem;
+}
+
+h3 {
+  font-family: var(--condensed-font);
+  font-weight: normal;
+}
+
+.btn-block {
+  width: 90%;
+  display: block;
+  font-size: var(--h3-font-size);
+  margin: 0 auto;
+}
+
+.mt-5 {
+  margin-bottom: 5rem;
+}
+
+/* Players page */
+.teams .team-one {
+  border-top: 1px solid #e6eceb;
+}
+
+.team-link {
+  border-bottom: 1px solid #e6eceb;
+  padding: 1rem 0 1rem 0;
+}
+
+.team-link a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003630;
+  padding: 1.5rem 0;
+}
+
+.team-link a h5 {
+  display: flex;
+  align-items: center;
+}
+
+h5 .player-name {
+  padding-left: 1rem;
+}
+
+.teams .container-ko .col-hlf-ko {
+  padding-right: 4rem;
+}
+
+/* Single player page  */
+.player-detail--img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.player-detail--first-line {
+  display: flex;
+  align-items: center;
+}
+
+.player-detail--name {
+  font-family: var(--condensed-font);
+  font-size: var(--h1-font-size);
+  padding-left: 2rem;
+}
+
+.player-detail--second-line {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin-left: 17rem;
+  margin-top: 5rem;
+}
+
+.player-detail--second-line__col {
+  width: 25%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-detail--second-line__col span {
+  font-size: var(--h3-font-size);
+  color: #314b49;
+}
+
+.player-detail__value {
+  color: #93a4a3;
+  font-size: var(--h3-font-size);
+  font-family: var(--body-font);
+  margin-top: 0.5rem;
 }
