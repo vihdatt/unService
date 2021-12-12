@@ -706,3 +706,137 @@ h1 a:hover {
 .mt-6 {
   margin-top: 10rem;
 }
+
+.col-3-qrtr-ko {
+  width: 75%;
+}
+
+.col-3-qrtr-ko > * {
+  max-width: 840px;
+}
+
+.section-sm {
+  margin-bottom: 6rem;
+}
+
+.section-sm h1 {
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 4rem;
+}
+
+.section-sm p,
+.content-text ol {
+  color: #314b49;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 3.3rem;
+  margin-bottom: 2rem;
+}
+
+.section-sm h2 {
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 3.8rem;
+  color: #003630;
+}
+
+.section-sm ol {
+  list-style-type: decimal-leading-zero;
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.section-sm ol li {
+  padding-left: 1.6rem;
+}
+
+.content-text li {
+  margin-bottom: 2rem;
+}
+
+li {
+  font-weight: 300;
+}
+
+li strong {
+  font-weight: 400;
+}
+
+.content-text h6 {
+  font-weight: 600;
+  font-size: var(--normal-font-size);
+  font-family: var(--condensed-font);
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p a {
+  display: inline;
+}
+
+.col-qrtr-ko:last-of-type {
+  padding-right: 0;
+}
+
+.col-qrtr-ko {
+  width: 25%;
+  float: right;
+}
+
+.sub-nav {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+}
+
+.our-team {
+  border-bottom: 1px solid #e6eceb;
+  margin-bottom: 3rem;
+}
+
+.our-team .team-member {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #e6eceb;
+}
+
+.team-member-photo {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 3.6rem;
+}
+
+.team-member div h3 {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  font-family: var(--body-font);
+}
+
+.team-member a {
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--condensed-font);
+  font-size: var(--normal-font-size);
+  line-height: 2.2rem;
+  color: #00734a;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.team-member a:hover {
+  color: #003630;
+  text-decoration: underline;
+}
+
+.team-member p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
