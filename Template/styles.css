@@ -433,19 +433,31 @@ a i {
 .text-scale-100 {
   font-family: var(--condensed-font);
   line-height: 2.1rem;
-  /* font-weight: 600; */
-  font-size: var(--normal-font-size);
-}
-
-.prediction-1st-win {
   font-weight: 600;
+  font-size: var(--normal-font-size);
   color: #00bf7c;
 }
 
 /* Progress Bar */
 
+.right-prediction {
+  font-weight: 600;
+}
+
+.wrong-prediction {
+  font-weight: 600;
+  color: #e96122;
+  font-size: var(--normal-font-size);
+}
+
 .bg-gray-100 {
   background: #00bf7c !important;
+}
+
+.text-scale-200 {
+  font-family: var(--condensed-font);
+  font-size: var(--normal-font-size);
+  color: var(--gray);
 }
 
 .progress-bar {
@@ -609,4 +621,92 @@ h5 .player-name {
   font-size: var(--h3-font-size);
   font-family: var(--body-font);
   margin-top: 0.5rem;
+}
+
+/* Match page */
+
+.container-ko .prediction-fixture {
+  width: 100%;
+}
+
+.prediction-percentages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player1-img,
+.player2-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.player-1 h1,
+.player-2 h1 {
+  font-weight: 300;
+  font-size: var(--big-font-size);
+  line-height: 6.2rem;
+}
+
+h1 a {
+  color: #003630;
+  text-decoration: none;
+  transition: 0.15s all ease;
+}
+
+h1 a:hover {
+  color: #003630;
+}
+
+.m-5 {
+  margin: 5rem 0;
+}
+
+.big-bar {
+  height: 0.8rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.match-details {
+  font-family: var(--condensed-font);
+  line-height: 1.4rem;
+  font-size: var(--normal-font-size);
+  color: #93a4a3;
+  text-transform: uppercase;
+}
+
+.match-competition {
+  color: #003630;
+  text-decoration: none;
+}
+
+.match-competition:hover {
+  color: #003630;
+  text-decoration: none;
+}
+
+.bg-scale-100 {
+  background-color: #00bf7c;
+}
+
+.bg-gray-200 {
+  background: #e96122;
+}
+
+/* About page */
+.mt-6 {
+  margin-top: 10rem;
+}
+
+.wrong-answer {
+  background-color: #f8986b !important;
 }
