@@ -433,7 +433,7 @@ a i {
 .text-scale-100 {
   font-family: var(--condensed-font);
   line-height: 2.1rem;
-  /* font-weight: 600; */
+  font-weight: 600;
   font-size: var(--normal-font-size);
   color: #00bf7c;
 }
@@ -446,7 +446,7 @@ a i {
 
 .wrong-prediction {
   font-weight: 600;
-  color: rgb(233, 97, 34);
+  color: #e96122;
   font-size: var(--normal-font-size);
 }
 
@@ -696,6 +696,10 @@ h1 a:hover {
 
 .bg-scale-100 {
   background-color: #00bf7c;
+}
+
+.bg-gray-200 {
+  background: #e96122;
 }
 
 /* About page */
