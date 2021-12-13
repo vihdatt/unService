@@ -164,13 +164,12 @@ a:not([href]):not([tabindex]):focus {
   height: 10rem;
 }
 
-.site-logo .logo-unservice {
+.site-logo .logo-unservice img {
   display: block;
-  background: url(https://kickoff.ai/static/img/logo-kickoffai.svg) no-repeat 0
-    0;
-  height: 2.8rem;
-  width: 12.5rem;
+  height: 3rem;
+  width: 13rem;
   margin-right: 2.8rem;
+  object-fit: cover;
 }
 
 .site-header .nav {
