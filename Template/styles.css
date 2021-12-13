@@ -235,6 +235,15 @@ a:not([href]):not([tabindex]):focus {
   margin-bottom: 2.4rem;
 }
 
+.hero-left a {
+  color: #00bf7c;
+  transition: all 0.15s ease;
+}
+
+.hero-left a:hover {
+  color: #00734a;
+}
+
 h1 {
   font-size: var(--big-font-size);
   font-weight: 300;
@@ -586,7 +595,7 @@ h5 .player-name {
 
 .player-detail--first-line {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .player-detail--name {
@@ -599,7 +608,7 @@ h5 .player-name {
   width: 1000px;
   display: flex;
   align-items: center;
-  margin-left: 17rem;
+  margin-left: 17.2rem;
   margin-top: 5rem;
 }
 
@@ -673,6 +682,19 @@ h1 a:hover {
   height: 0.8rem;
   border-radius: 10px;
   margin: 1.5rem 0;
+}
+
+.player-card a {
+  display: flex;
+  align-items: center;
+}
+
+.player-card a .player-name {
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  font-weight: 300;
+  color: #003630;
+  margin: 0 1rem;
 }
 
 .match-details {
@@ -838,4 +860,24 @@ p a {
 .team-member p {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.unservice {
+  cursor: pointer;
+  display: inline;
+}
+
+p strong {
+  font-weight: 500;
+}
+
+ol li strong {
+  font-weight: 500;
+}
+
+.team-member-photo img {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  overflow: hidden;
 }
